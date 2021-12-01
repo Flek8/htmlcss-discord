@@ -1,3 +1,4 @@
+/* Regole Generali*/
 *{
     margin: 0;
     padding: 0;
@@ -17,24 +18,22 @@
     text-decoration: none;
     padding: 6px 12px;
 }
+/* Fine Regole Generali*/
 
 /* Header */
 header{
     line-height: 100px;
     background-color: rgb(29, 99, 230);
 }
-.row::after{
-    content: "";
-    display: table;
-    clear: both;
-}
-#logo img{
-    vertical-align: middle;
-}
-#logo{
+
+.logo{
     float: left;
     width: 15%;
 }
+.logo img{
+    vertical-align: middle;
+}
+
 header nav{
     float: left;
     width: 70%;
@@ -49,12 +48,20 @@ header nav ul li a{
     color: white;
     text-decoration: none;
 }
+
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+
 #login{
     float: right;
     width: 15%;
     text-align: right;
 }
 
+/* Fine Header */
 
 
 /* Jumbotron */
@@ -70,16 +77,16 @@ header nav ul li a{
     width: 51%;
     max-width: 780px;
     margin: 0 auto;
-    min-height: 62vh;
+    min-height: 360px;
 }
 #jumbotron h2{
     display: inline-block;
     padding: 30px;
-    font-size: 9vh;
+    font-size: 54px;
 }
 #jumbotron p{
     display: inline-block;
-    font-size: 3vh;
+    font-size: 18px;
 }
 .buttons{
     display: inline-block;
@@ -94,19 +101,29 @@ header nav ul li a{
     color: white;
 }
 
+/* Fine Jumbotron */
 
 /* Main */
 section{
-    min-height: 70vh;
+    min-height: 420px;
 }
 section img{
-    height: 60vh;
+    height: 360px;
+}
+.articolo h2{
+    font-size: 48px;
+}
+.articolo p{
+    margin-top: 10px;
+    font-size: 21px;
 }
 section::after{
     content: "";
     display: table;
     clear: both;
 }
+
+
 .sect-white .immagine{
     float: left;
     width: 60%;
@@ -118,6 +135,8 @@ section::after{
     padding: 70px 0;
     text-align: left;
 }
+
+
 #sfondogrigio{
     background-color: lightgray;
 }
@@ -132,13 +151,8 @@ section::after{
     padding: 70px 0;
     text-align: left;
 }
-.articolo h2{
-    font-size: 8vh;
-}
-.articolo p{
-    margin-top: 10px;
-    font-size: 3.5vh;
-}
+
+
 #sect-big{
     padding: 70px 0;
     text-align: center;
@@ -148,12 +162,88 @@ section::after{
     height: fit-content;
 }
 .download span{
-    padding: 15px 20px 10px 20px;
-    font-size: 5vh;
+    display: block;
+    padding: 15px 30px 10px 30px;
+    font-size: 30px;
     font-weight: bold;
     background-size: contain;
     background-position: center;
     background-image: url(../img/stars.svg);
 }
+.download a{
+    background-color: rgb(99, 135, 201);
+    color: white;
+}
 
 /* Footer */
+footer{
+    height: 600px;
+    background-color: rgb(15, 14, 14);
+}
+.social{
+    float: left;
+    width: 30%;
+}
+.social h3{
+    color: rgb(99, 135, 201);
+    font-size: 35px;
+    font-weight: bolder;
+    margin: 50px 0 20px 0;
+}
+.social span{
+    font-size: 15px;
+    color: white;
+}
+.symbols i{
+    padding: 15px;
+}
+.social img{
+    height: 15px;
+}
+
+
+.info{
+    float: left;
+    width: 70%;
+    margin-bottom: 10px;
+}
+.clearfix{
+    overflow: auto;
+}
+
+.colonna{
+    display: inline;
+    color: white;
+}
+.colonna div{
+    display: inline;
+}
+.colonna ul{
+    display: inline-block;
+    vertical-align: top;
+    margin: 50px 50px 0 0;
+}
+.colonna div ul li{
+    display: block;
+    margin: 10px 0;
+    font-weight: bold;
+}
+.categoria{
+    color: rgb(99, 135, 201);
+    margin-top: 60px;
+}
+
+
+hr{
+    border-color: rgb(99, 135, 201);
+    margin-bottom: 15px;
+}
+
+
+.fondo .btn{
+    float: right;
+    color: white;
+    background-color: rgb(99, 135, 201);
+}
+
+/* Fine Footer*/
