@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: helvetica;
+}
+.container{
+    width: 80%;
+    max-width: 1180px;
+    margin: 0 auto;
+    height: 100%;
+}
+.btn{
+    background-color: white;
+    color: black;
+    border-radius: 40px;
+    text-decoration: none;
+    padding: 6px 12px;
+}
+
+/* Header */
+header{
+    line-height: 100px;
+    background-color: rgb(29, 99, 230);
+}
+.row::after{
+    content: "";
+    display: table;
+    clear: both;
+}
+#logo img{
+    vertical-align: middle;
+}
+#logo{
+    float: left;
+    width: 15%;
+}
+header nav{
+    float: left;
+    width: 70%;
+    text-align: center;
+}
+header nav ul li{
+    display: inline-block;
+    margin: 0 15px;
+    
+}
+header nav ul li a{
+    color: white;
+    text-decoration: none;
+}
+#login{
+    float: right;
+    width: 15%;
+    text-align: right;
+}
+
+
+
+/* Jumbotron */
+#jumbotron{
+    background-image: url(./../img/jumbo.png);
+    background-size: cover;
+    background-position: center;
+    
+}
+#jumbotron .contenuto{
+    color: white;
+    text-align: center;
+    width: 51%;
+    max-width: 780px;
+    margin: 0 auto;
+    min-height: 62vh;
+}
+#jumbotron h2{
+    display: inline-block;
+    padding: 30px;
+    font-size: 9vh;
+}
+#jumbotron p{
+    display: inline-block;
+    font-size: 3vh;
+}
+.buttons{
+    display: inline-block;
+    margin-top: 30px;
+}
+.btnbig{
+    padding: 12px 24px;
+    margin: 0 10px;
+}
+#btndark{
+    background-color: rgb(14, 13, 13);
+    color: white;
+}
+
+
+/* Main */
+
+
+/* Footer */
